@@ -50,8 +50,8 @@ El objetivo de este documento es:
 [📌 Vulnerabilidad](https://nvd.nist.gov/vuln/detail/CVE-2024-0204)
 
 <p align="center">
-    <img src="Imagenes\NIST1.png" alt="Config Nano">
-    <img src="Imagenes\NIST2.png" alt="Config Nano">
+    <img src="imagenes\NIST1.png" alt="Config Nano">
+    <img src="imagenes\NIST2.png" alt="Config Nano">
 </p>
 
 En esta captura podemos ver que el CVSS de 9.8 de criticidad está compuesto por un valor de 3.9 en las métricas de explotabilidad:
