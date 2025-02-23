@@ -77,13 +77,13 @@ Este CVSS indica una vulnerabilidad crítica con un alto impacto en los sistemas
 En la siguiente imagen podemos ver las diferentes formas de explotación de esta vulnerabilidad:
 
 <p align="center">
-    <img src="Imagenes\NIST3.png" alt="Config Nano">
+    <img src="imagenes\NIST3.png" alt="Config Nano">
 </p>
 
 Este enlace nos redirige a la página de [MITRE](https://cwe.mitre.org/data/definitions/425.html):
 
 <p align="center">
-    <img src="Imagenes\MITRE.png" alt="Config Nano">
+    <img src="imagenes\MITRE.png" alt="Config Nano">
 </p>
 
 ---
@@ -101,13 +101,13 @@ Este enlace nos redirige a la página de [MITRE](https://cwe.mitre.org/data/defi
 En la siguiente sección, podremos obtener más detalles sobre los patrones de ataque relacionados:
 
 <p align="center">
-    <img src="Imagenes\MITRE2.png" alt="Config Nano">
+    <img src="imagenes\MITRE2.png" alt="Config Nano">
 </p>
 
 Este enlace nos redirige a una página con más información:
 
 <p align="center">
-    <img src="Imagenes\CAPEC1.png" alt="Config Nano">
+    <img src="imagenes\CAPEC1.png" alt="Config Nano">
 </p>
 
 **CAPEC-127: Directory Indexing** es un patrón de ataque muy conocido. En este caso, un adversario explora el contenido de un directorio sin autorización al solicitar una ruta que termina en un nombre de directorio. Esto puede exponer archivos sensibles como copias de seguridad, archivos temporales y otros que pueden ser explotados para obtener más información y vulnerar aún más la seguridad del sistema.
@@ -152,13 +152,13 @@ Para finalizar con la trazabilidad de esta vulnerabilidad, descargaremos el arch
 Una vez dentro, podrás ver la información detallada en formato JSON:
 
 <p align="center">
-<img src="Imagenes\CVE.png" alt="Config Nano">
+<img src="imagenes\CVE.png" alt="Config Nano">
 </p>
 
 Y el archivo JSON:
 
 <p align="center">
-    <img src="Imagenes\JSON.png" alt="Config Nano">
+    <img src="imagenes\JSON.png" alt="Config Nano">
 </p>
 
 ---
