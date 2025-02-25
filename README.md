@@ -14,6 +14,7 @@
     - [Consecuencias](#consecuencias)
     - [Mitigaciones](#mitigaciones)
   - [Registro CVE de la vulnerabilidad](#registro-cve-de-la-vulnerabilidad)
+  - [Forma de explotación de la vulnerabilidad](#forma-de-explotación-de-la-vulnerabilidad)
   - [Conclusiones](#conclusiones)
 
 ---
@@ -23,6 +24,13 @@
 Este documento describe la vulnerabilidad **CVE-2024-0204**, una grave omisión de autenticación en **GoAnywhere MFT**. En él, se detallará su impacto, las posibles mitigaciones y las fuentes oficiales donde se puede obtener más información.
 
 Esta vulnerabilidad es particularmente crítica, ya que permite a un atacante sin autenticación **crear un usuario administrador** en el portal de administración, comprometiendo así la seguridad del sistema.
+
+El CVE se ha obtenido de la siguiente página.
+[📌 CVE](https://www.incibe.es/empresas/avisos/vulnerabilidad-critica-de-omision-de-autenticacion-en-goanywhere-mft-de-fortra)
+<p align="center">
+    <img src="Imagenes\INCIBE.png" alt="Config Nano">
+    <img src="Imagenes\INCIBE2.png" alt="Config Nano">
+</p>
 
 ---
 
@@ -161,6 +169,20 @@ Y el archivo JSON:
     <img src="Imagenes\JSON.png" alt="Config Nano">
 </p>
 
+## Forma de explotación de la vulnerabilidad
+
+La vulnerabilidad **CVE-2024-0204** en **GoAnywhere MFT** permite a un atacante no autenticado crear un usuario administrador a través del portal de administración. Esta vulnerabilidad, identificada como **CWE-425: Petición directa de recurso web**, se debe a una omisión de autenticación que permite el acceso no autorizado a recursos restringidos.
+
+**Forma de explotación:**
+
+1. **Acceso al portal de administración:** El atacante accede directamente al portal de administración de GoAnywhere MFT sin necesidad de credenciales.
+
+2. **Creación de usuario administrador:** Aprovechando la omisión de autenticación, el atacante utiliza solicitudes HTTP específicas para crear una nueva cuenta con privilegios de administrador.
+
+3. **Control total del sistema:** Con la cuenta de administrador creada, el atacante obtiene acceso completo al sistema, pudiendo exfiltrar datos sensibles, modificar configuraciones o desplegar software malicioso.
+
+Es crucial que las organizaciones que utilizan versiones anteriores a la 7.4.1 de GoAnywhere MFT actualicen su software de inmediato para mitigar esta vulnerabilidad.
+
 ---
 
 ## Conclusiones
@@ -174,3 +196,5 @@ Es esencial que las organizaciones adopten un enfoque proactivo en la gestión d
 ---
 **Autor**
 Sergio Morato Prieto
+
+---
